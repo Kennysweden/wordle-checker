@@ -20,7 +20,7 @@ function check(){
   if(!raw)return;
   entered++;
   if(raw.length!==5){status.textContent='5 letters needed';status.classList.add('extra')}
-  else if(match){found++;status.textContent=match===match.toLowerCase()?'Yes · Extra Wordle Word':'Yes';status.classList.add('yes')}
+  else if(match){found++;status.textContent=match===match.toLowerCase()?'Yes – Wordle Only':'Yes';status.classList.add('yes')}
   else{status.textContent='Not on list';status.classList.add('no')}
  });
  saveEntries();
